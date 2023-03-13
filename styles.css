@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: black;
+	background-color: #f7f4f4;
+	overflow-x: hidden;
+	font-family: 'Satisfy', cursive;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p {
+	line-height: 2;
+	font-family: 'Satisfy', cursive;
+	font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Satisfy', cursive;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+.container {
+	min-height: 200vh;
+	margin-bottom: 170px;
+}
+.navbar {
+	width: 100vw;
+	height: 70px;
+	background-color: #d9d9d933;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.navbar_wrapper {
+	display: flex;
+	width: inherit;
+	max-width: 1080px;
+	height: inherit;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.brand {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	font-weight: 700;
+}
+
+.navabar_menu {
+	display: flex;
+	flex-direction: row;
+	font-weight: 400;
+	font-size: 18px;
+	gap: 30px;
+	text-transform: capitalize;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 600px;
+    background-image: url('https://cdn-brilio-net.akamaized.net/news/2022/03/21/225517/1697204-1000xauto-3-tips-memilih-cincin-nikah.jpg') ;
+    background-size: cover;
+    background-position: top;
+    transition-duration: 3s;
+    margin-bottom: 70px;
+}
+
+.hero:hover {
+	background-position: bottom;
+}
+
+.hero p {
+	font-size: 32px;
+	font-weight: 400;
+	margin: 0;
+}
+hero h1 {
+	font-weight: 700;
+	font-size: 96px;
+	margin: 0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+}
+
+.section_title {
+	font-size: 64px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.section_content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.section_content h2 {
+	font-size: 32px;
+	margin: 0;
+}
+
+.section_image {
+	width: 540px;
+	height: 350px;
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+}
+	
+#akad .section_image {
+	background-image: url("https://blog.atome.id/wp-content/uploads/2022/05/6.-Gaun-Pengantin-Sabrina-779x1024.jpg");
+}
+
+#resepsi .section_image {
+	background-image: url('https://www.kartikacatering.com/wp-content/uploads/2019/06/pernikahan-resepsi-catering-adat-jawa.jpg');
+}
+.form_wrapper {
+	width: inherit;
+	height: 567px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-image: url('https://www.canva.com/design/DAFZxthA1fM/VSa7ws-qqzBuWMLlh-RE6A/view?utm_content=DAFZxthA1fM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink');
+	background-size: cover;
+	background-position: bottom;
+	margin: 34px 0;
+	transition-duration: 5s;
+}
+
+.form_wrapper:hover {
+	background-position: top;
+}
+
+.form_buku_tamu {
+	width: 700px;
+	height: 500px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.199);
+	padding: 50px 70px;
+	gap: 25px;
+	justify-content: center;
+}
+
+.form_group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Satisfy', cursive
+}
+
+.form_group input {
+	width: 350px;
+	height: 44px;
+	border: 1px solid #d9d9d9;
+	padding: 0 10px;
+}
+
+.form_wrapper button {
+	background-color: #000;
+	border: none;
+	outline: none;
+	width: 150px;
+	height: 44px;
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: auto;
+}
+
+#map .section_content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.btn_map {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 266px;
+	height: 50px;
+	border: none;
+	outline-style: none;
+	background-color: #fff;
+}
+
+.btn_map:hover {
+	background-color: rgb( 247, 241, 241);
+	box-shadow: 3px 5px 8px rgb(0, 0, 0, 0.199);
+}
+
+.gallery_list {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	padding: 30px;
+}
+
+.gallery_list img {
+	width: 100%;
+	object-fit: cover;
+}
+
+footer {
+	width: 100vw;
+	height: 200px;
+	display: flex;
+	background-color: #2e1e00;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+footer p,
+footer h2 {
+    margin: 0;
+    color: #fff;
+}
